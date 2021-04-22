@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/covid19_vaccination_center/static/css/main.89300ac6.chunk.css",
-    "main.js": "/covid19_vaccination_center/static/js/main.955ad7b8.chunk.js",
-    "main.js.map": "/covid19_vaccination_center/static/js/main.955ad7b8.chunk.js.map",
-    "runtime-main.js": "/covid19_vaccination_center/static/js/runtime-main.1054d6bd.js",
-    "runtime-main.js.map": "/covid19_vaccination_center/static/js/runtime-main.1054d6bd.js.map",
-    "static/js/2.52522eaa.chunk.js": "/covid19_vaccination_center/static/js/2.52522eaa.chunk.js",
-    "static/js/2.52522eaa.chunk.js.map": "/covid19_vaccination_center/static/js/2.52522eaa.chunk.js.map",
-    "static/js/3.3fdfdde3.chunk.js": "/covid19_vaccination_center/static/js/3.3fdfdde3.chunk.js",
-    "static/js/3.3fdfdde3.chunk.js.map": "/covid19_vaccination_center/static/js/3.3fdfdde3.chunk.js.map",
+    "main.css": "/covid19_vaccination_center/static/css/main.50fa318d.chunk.css",
+    "main.js": "/covid19_vaccination_center/static/js/main.a3a6d73b.chunk.js",
+    "main.js.map": "/covid19_vaccination_center/static/js/main.a3a6d73b.chunk.js.map",
+    "runtime-main.js": "/covid19_vaccination_center/static/js/runtime-main.07d45458.js",
+    "runtime-main.js.map": "/covid19_vaccination_center/static/js/runtime-main.07d45458.js.map",
+    "static/js/2.37588b76.chunk.js": "/covid19_vaccination_center/static/js/2.37588b76.chunk.js",
+    "static/js/2.37588b76.chunk.js.map": "/covid19_vaccination_center/static/js/2.37588b76.chunk.js.map",
+    "static/js/3.3428c6ee.chunk.js": "/covid19_vaccination_center/static/js/3.3428c6ee.chunk.js",
+    "static/js/3.3428c6ee.chunk.js.map": "/covid19_vaccination_center/static/js/3.3428c6ee.chunk.js.map",
     "index.html": "/covid19_vaccination_center/index.html",
-    "static/css/main.89300ac6.chunk.css.map": "/covid19_vaccination_center/static/css/main.89300ac6.chunk.css.map",
-    "static/js/2.52522eaa.chunk.js.LICENSE.txt": "/covid19_vaccination_center/static/js/2.52522eaa.chunk.js.LICENSE.txt"
+    "static/css/main.50fa318d.chunk.css.map": "/covid19_vaccination_center/static/css/main.50fa318d.chunk.css.map",
+    "static/js/2.37588b76.chunk.js.LICENSE.txt": "/covid19_vaccination_center/static/js/2.37588b76.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.1054d6bd.js",
-    "static/js/2.52522eaa.chunk.js",
-    "static/css/main.89300ac6.chunk.css",
-    "static/js/main.955ad7b8.chunk.js"
+    "static/js/runtime-main.07d45458.js",
+    "static/js/2.37588b76.chunk.js",
+    "static/css/main.50fa318d.chunk.css",
+    "static/js/main.a3a6d73b.chunk.js"
   ]
 }
