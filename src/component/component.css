@@ -1,0 +1,21 @@
+.center_info {
+  width: max-content;
+  padding: 10px;
+  align-items: center;
+}
+
+.centerName {
+  color: #0039cb;
+  font-weight: 1000;
+}
+
+.facilityName {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 13px;
+}
+
+.map {
+  width: 500px;
+  height: 400px;
+}

@@ -2,6 +2,6 @@
   text-align: center;
 }
 
-.navigation {
-  color: red;
+body::-webkit-scrollbar {
+  display: none !important;
 }
