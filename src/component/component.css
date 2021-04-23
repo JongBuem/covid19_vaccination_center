@@ -2,6 +2,7 @@
   width: max-content;
   padding: 10px;
   align-items: center;
+  text-decoration: none;
 }
 
 .centerName {
@@ -10,12 +11,14 @@
 }
 
 .facilityName {
+  color: black;
   display: flex;
   justify-content: flex-start;
   font-size: 13px;
 }
 
-.map {
-  width: 500px;
-  height: 400px;
+#map {
+  margin: 10px;
+  width: 960px;
+  height: 78vh;
 }

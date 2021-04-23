@@ -1,7 +1,7 @@
 
 import React, { useState } from "react";
 import Menu from "../component/Menu";
-import Location from "../component/Location";
+import Map from "../component/Map";
 import './routes.css';
 
 export default function Navigation({info,isLoading}){
@@ -50,12 +50,14 @@ export default function Navigation({info,isLoading}){
                             zipCode={data.zipCode}
                             address={data.address}
                             centerType={data.centerType}
+                            lat={data.lat}
+                            lng={data.lng}
                             />)) }
                         </div>)
                     }
                 </div>
                 <div>
-                    <Location/>
+                    <Map/>
                 </div>
             </div>
         </div>

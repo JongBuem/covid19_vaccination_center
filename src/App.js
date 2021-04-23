@@ -30,7 +30,7 @@ export default class App extends React.Component{
     const {covid, isLoading} = this.state; //this.state."" 를 간소화
     return (
       <HashRouter>
-        <Route path="/" render={() => <Navigation info={covid} isLoading={isLoading}/> }/>	
+        <Route path="/"  render={() => <Navigation info={covid} isLoading={isLoading}/> }/>
       </HashRouter>
     );
   }
