@@ -1,22 +1,20 @@
 {
   "files": {
-    "main.css": "/covid19_vaccination_center/static/css/main.50fa318d.chunk.css",
-    "main.js": "/covid19_vaccination_center/static/js/main.a3a6d73b.chunk.js",
-    "main.js.map": "/covid19_vaccination_center/static/js/main.a3a6d73b.chunk.js.map",
-    "runtime-main.js": "/covid19_vaccination_center/static/js/runtime-main.07d45458.js",
-    "runtime-main.js.map": "/covid19_vaccination_center/static/js/runtime-main.07d45458.js.map",
-    "static/js/2.37588b76.chunk.js": "/covid19_vaccination_center/static/js/2.37588b76.chunk.js",
-    "static/js/2.37588b76.chunk.js.map": "/covid19_vaccination_center/static/js/2.37588b76.chunk.js.map",
-    "static/js/3.3428c6ee.chunk.js": "/covid19_vaccination_center/static/js/3.3428c6ee.chunk.js",
-    "static/js/3.3428c6ee.chunk.js.map": "/covid19_vaccination_center/static/js/3.3428c6ee.chunk.js.map",
+    "main.css": "/covid19_vaccination_center/static/css/main.6ef9a799.chunk.css",
+    "main.js": "/covid19_vaccination_center/static/js/main.cc5896be.chunk.js",
+    "main.js.map": "/covid19_vaccination_center/static/js/main.cc5896be.chunk.js.map",
+    "runtime-main.js": "/covid19_vaccination_center/static/js/runtime-main.d0e19932.js",
+    "runtime-main.js.map": "/covid19_vaccination_center/static/js/runtime-main.d0e19932.js.map",
+    "static/js/2.433f1e19.chunk.js": "/covid19_vaccination_center/static/js/2.433f1e19.chunk.js",
+    "static/js/2.433f1e19.chunk.js.map": "/covid19_vaccination_center/static/js/2.433f1e19.chunk.js.map",
     "index.html": "/covid19_vaccination_center/index.html",
-    "static/css/main.50fa318d.chunk.css.map": "/covid19_vaccination_center/static/css/main.50fa318d.chunk.css.map",
-    "static/js/2.37588b76.chunk.js.LICENSE.txt": "/covid19_vaccination_center/static/js/2.37588b76.chunk.js.LICENSE.txt"
+    "static/css/main.6ef9a799.chunk.css.map": "/covid19_vaccination_center/static/css/main.6ef9a799.chunk.css.map",
+    "static/js/2.433f1e19.chunk.js.LICENSE.txt": "/covid19_vaccination_center/static/js/2.433f1e19.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.07d45458.js",
-    "static/js/2.37588b76.chunk.js",
-    "static/css/main.50fa318d.chunk.css",
-    "static/js/main.a3a6d73b.chunk.js"
+    "static/js/runtime-main.d0e19932.js",
+    "static/js/2.433f1e19.chunk.js",
+    "static/css/main.6ef9a799.chunk.css",
+    "static/js/main.cc5896be.chunk.js"
   ]
 }
