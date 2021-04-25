@@ -1,10 +1,12 @@
-
 import React, { useState } from "react";
-import Menu from "../component/Menu";
-import Map from "../component/Map";
+import Menu from "../component/Menu"
 import './routes.css';
 
+
+
 export default function Navigation({info,isLoading}){
+
+
     const datas = info;
     const [ state, setState ] = useState({ 
         mode:null, 
@@ -57,10 +59,9 @@ export default function Navigation({info,isLoading}){
                     }
                 </div>
                 <div>
-                    <Map/>
+
                 </div>
             </div>
         </div>
     )
 }
-

@@ -1,8 +1,14 @@
-.center_info {
+.center {
   width: max-content;
   padding: 10px;
   align-items: center;
   text-decoration: none;
+  cursor: pointer;
+}
+
+.center_info :hover {
+  background-color: #98e1f3;
+  border-radius: 5px;
 }
 
 .centerName {
@@ -18,7 +24,26 @@
 }
 
 #map {
+  position: absolute;
+  top: 130px;
+  left: 400px;
   margin: 10px;
-  width: 960px;
-  height: 78vh;
+  width: 940px;
+  height: 75vh;
+}
+
+@media (max-width: 1000px) {
+  /*페이지 크기가 600이하일 경우 반응*/
+  #map {
+    top: 180px;
+    height: 68vh;
+  }
+}
+
+@media (max-width: 600px) {
+  /*페이지 크기가 600이하일 경우 반응*/
+  #map {
+    top: 300px;
+    height: 50vh;
+  }
 }
