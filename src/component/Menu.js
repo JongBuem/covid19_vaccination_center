@@ -1,16 +1,36 @@
-import React, { useState }  from "react";
+import React, { useState, useEffect }  from "react";
 import './component.css';
 import Map from "./Map";
 
 
-export default function Menu({id,sido,city,centerName,facilityName,zipCode,address,centerType, lat, lng}){
+let arrLat=[100];
+let arrLng=[100];
+
+export default function Menu({id,sido,city,centerName,facilityName,zipCode,address,centerType, lat, lng, zom}){
+    const latt = lat;
+    const lngg = lng;
+
     const [ state, setState ] = useState({ 
-        lat:127.344399,
-        lng:36.378512,
-        mode:false,
+        lat:latt,
+        lng:lngg,
+        mode:true,
+        zoom:zom,
     }); 
 
-    const Mode = state.mode;
+
+    useEffect(() => {        
+        arrLat=[];
+        arrLng =[];
+    }, [city.mode]);
+
+    const toogle=()=>{
+        if(state.mode===true){
+            setState({...state, lat:lat-0.000001, lng:lng-0.000001,mode:false, zoom:true})
+        }else{
+        setState({...state, lat:lat, lng:lng,mode:true, zoom:true})
+        }
+     }
+
 
     if(sido !== city.mode){
         sido=null;
@@ -27,20 +47,13 @@ export default function Menu({id,sido,city,centerName,facilityName,zipCode,addre
         );
     }
 
-    function toogle(){
-       if(state.mode===true){
-        setState({...state, lat:lat-0.000001, lng:lng-0.000001,mode:false})
-       }else{
-        setState({...state, lat:lat, lng:lng,mode:true})
-       }
-    }
 
     if(sido === city.mode){
-        const latt=lat;
-        const lngg=lng;
+        arrLat.push(state.lat);
+        arrLng.push(state.lng);
         return(
-            <div className="center" onClick={toogle}>
-                <div className="center_info"> 
+            <div className="center">
+                <div className="center_info" onClick={toogle}> 
                     <div>
                         <div className="centerName">
                                 {centerName} 
@@ -51,11 +64,10 @@ export default function Menu({id,sido,city,centerName,facilityName,zipCode,addre
                         </div> 
                     </div>
                 <div>
-                    <Map lat={state.lat} lng={state.lng}></Map>
+                    <Map lat={state.lat} lng={state.lng} zoom={state.zoom} arrLat={arrLat} arrLng={arrLng}></Map>
                 </div>
             </div>
             
         );
     }
-
 }

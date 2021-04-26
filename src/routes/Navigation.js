@@ -1,15 +1,15 @@
-import React, { useState } from "react";
+import React, { useState }  from "react";
 import Menu from "../component/Menu"
 import './routes.css';
 
 
 
 export default function Navigation({info,isLoading}){
-
-
+    let array=[];
     const datas = info;
     const [ state, setState ] = useState({ 
-        mode:null, 
+        mode:null,
+        zom:false, 
     }); //켈린더 와 매표의 초기모드
 
     return(
@@ -18,6 +18,7 @@ export default function Navigation({info,isLoading}){
                 <div className="city">
                     <div onClick={()=>setState({ state, mode:"서울특별시"})}>서울</div>
                     <div onClick={()=>setState({ state, mode:"인천광역시"})}>인천</div>
+                    <div onClick={()=>setState({ state, mode:"세종특별자치시"})}>세종</div>
                     <div onClick={()=>setState({ state, mode:"대전광역시"})}>대전</div>
                     <div onClick={()=>setState({ state, mode:"대구광역시"})}>대구</div>
                     <div onClick={()=>setState({ state, mode:"울산광역시"})}>울산</div>
@@ -54,12 +55,10 @@ export default function Navigation({info,isLoading}){
                             centerType={data.centerType}
                             lat={data.lat}
                             lng={data.lng}
+                            zom={state.zom}
                             />)) }
                         </div>)
                     }
-                </div>
-                <div>
-
                 </div>
             </div>
         </div>
