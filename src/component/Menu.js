@@ -5,22 +5,24 @@ import Map from "./Map";
 
 let arrLat=[100];
 let arrLng=[100];
-
+let arrFacilityName=[100];
 export default function Menu({id,sido,city,centerName,facilityName,zipCode,address,centerType, lat, lng, zom}){
     const latt = lat;
     const lngg = lng;
-
+    const facilityNamee =facilityName;
     const [ state, setState ] = useState({ 
         lat:latt,
         lng:lngg,
         mode:true,
         zoom:zom,
+        facilityName:facilityNamee,
     }); 
 
 
     useEffect(() => {        
         arrLat=[];
         arrLng =[];
+        arrFacilityName =[];
     }, [city.mode]);
 
     const toogle=()=>{
@@ -51,6 +53,7 @@ export default function Menu({id,sido,city,centerName,facilityName,zipCode,addre
     if(sido === city.mode){
         arrLat.push(state.lat);
         arrLng.push(state.lng);
+        arrFacilityName.push(state.facilityName);
         return(
             <div className="center">
                 <div className="center_info" onClick={toogle}> 
@@ -64,7 +67,7 @@ export default function Menu({id,sido,city,centerName,facilityName,zipCode,addre
                         </div> 
                     </div>
                 <div>
-                    <Map lat={state.lat} lng={state.lng} zoom={state.zoom} arrLat={arrLat} arrLng={arrLng}></Map>
+                    <Map lat={state.lat} lng={state.lng} zoom={state.zoom} arrLat={arrLat} arrLng={arrLng} arrFacilityName={arrFacilityName}></Map>
                 </div>
             </div>
             

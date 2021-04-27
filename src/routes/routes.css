@@ -12,6 +12,7 @@
 .navigation {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .area {
@@ -35,7 +36,7 @@
   cursor: pointer;
   font-size: 20px;
   padding: 5px 10px 5px 10px;
-  margin: 5px 10px 10px 10px;
+  margin: 3px 5px 10px 5px;
   background-color: white;
   border: 1px #0039cb solid;
   border-radius: 50px;
@@ -48,7 +49,7 @@
 }
 
 .centers {
-  width: 380px;
+  width: 383px;
   height: 80vh;
   overflow-y: scroll;
   margin-top: 5px;
@@ -58,4 +59,25 @@
 
 .Location {
   display: flex;
+}
+
+@media (max-width: 1000px) {
+  /*페이지 크기가 600이하일 경우 반응*/
+  .centers {
+    height: 70vh;
+  }
+}
+
+@media (max-width: 650px) {
+  /*페이지 크기가 600이하일 경우 반응*/
+
+  .area .city div {
+    padding: 5px 5px 5px 5px;
+    font-size: 15px;
+    font-weight: 1000;
+  }
+  .centers {
+    width: 75vh;
+    height: 35vh;
+  }
 }
