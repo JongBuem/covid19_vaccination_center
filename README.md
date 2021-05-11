@@ -1,6 +1,6 @@
 # covid19_vaccination_center [코로나19 예방접종센터 조회]
 
-홈페이지 : [https://JongBuem.github.io/covid19_vaccination_center](https://JongBuem.github.io/covid19_vaccination_center)
+홈페이지 : [https://JongBuem.github.io/covid19_vaccination_center](https://JongBuem.github.io/covid19_vaccination_center):hospital:
 
 ## **목차**
 
@@ -19,9 +19,9 @@
 
 ## **2. 주요기능**
 
-- 공공데이터포털 API 이용
+- 공공데이터포털 API 이용 :open_hands:
 - 해당 지역의 예방접종센터 출력
-- 카카오톡 Map API 이용
+- 카카오톡 Map API 이용 :open_hands:
 - 지도에 마커 생성
 - 마커의 마우스 이벤트
 
@@ -31,7 +31,7 @@
 
 <br>
 
-## 3-1. App.js
+## 3-1. App.js :ambulance:
 
 > **useEffect**를 이용하여 **마운트직후** 공공데이터포럴의 해당 **API정보를** 가져왔습니다. <br>**axios**로 코로나19 예방접종센터 정보를 가져온 후 state.covid에 갱신하였습니다.<br>Home컴포넌트에 코로나19 예방접종센터 정보를 가진 state.covid 와 로딩중을 표시하는 state.isLoading 값을 전달 하였습니다.
 
@@ -73,7 +73,7 @@ export default function App() {
 
 <br>
 
-## 3-2. Home.js
+## 3-2. Home.js :open_file_folder:
 
 > Home 컴포넌트는 전달받은 정보의 수만큼 Map()을 이용하여 Menu컴포넌트를 불러오고 필요한 정보들을 전달 합니다.<br>지역정보를 담고있는 배열을 이용하여 네비게이션 메뉴를 출력합니다.<br>지역을 클릭하면 state.mode 값을 변경합니다.<br>state.mode는 Menu 컴포넌트에 전달하여 지역에 맞는 예방접종 센터 리스트를 비교 출력하기 위함 입니다.<br>state.zom은 지역과 센터 클릭여부에 따른 지도의 확대 값 level을 변경하기 위함 입니다.
 
@@ -164,7 +164,7 @@ export default function Home({ info, isLoading }) {
 
 <br>
 
-## 3-3. Menu.js
+## 3-3. Menu.js :+1::+1:
 
 > Menu컴포넌트는 Home으로부터 클릭하여 받아온 지역정보와 전체 지역정보를 비교하여 해당하는 지역의 예방접종센터정보를 리스트로 출력하고 해당하지 않는 지역의 정보는 출력하지 않습니다.<br>지도에 여러개의 마커와 센터의 시설명을 표시할 정보를 담은 위도,경도 배열과 센터명 배열을 Map컴포넌트에 전달합니다.<br>state.zoom은 Home컴포넌트의 zom을 초기값으로 하고 센터 리스트와 네비게이션의 지역에 대한 클릭여부를 판단하여 변경하고 Map컴포넌트에 전달 합니다.
 
@@ -270,7 +270,7 @@ export default function Menu({
 
 <br>
 
-## 3-4. Map.js
+## 3-4. Map.js :pushpin:
 
 > Map컴포넌트는 카카오톡 map API를 이용하여 화면에 지도를 출력합니다.<br>화면에 출력할 지도의 옵션은 Menu컴포넌트에서 전달받은 zoom값의 따라 변경 됩니다. (zoom: 네비게이션과 리스트의 클릭여부)<br>전달받은 lat(위도)와 lng(경도)의 값을 이용하여 지도가 출력될 중심을 설정 하였습니다.<br>arrLat(위도), arrLng(경도), arrFacilityName(센터명) 배열을 이용하여 지도에 표시할 marker와 marker의 infowindow(정보)를 생성 하였습니다.<br>addListener를 이용하여 mouse의 event의 따라 함수를 호출하여 infowindow(정보)가 출력되거나 닫히게 하였습니다.
 
@@ -382,7 +382,7 @@ export default function Map({
 ## **5. 개선방안**
 
 - 모바일(ios,android) 반응형 개선
-- marker 이미지 커스텀
+- marker 이미지 커스텀 :pray:
 - marker 클릭 이벤트 추가
 
 ---
