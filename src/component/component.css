@@ -1,3 +1,7 @@
+.home {
+  background-color: white;
+}
+
 .center {
   width: max-content;
   padding: 10px;
@@ -60,5 +64,6 @@
     left: 3px;
     height: 68vh;
     width: 95%;
+    margin-top: 10px;
   }
 }

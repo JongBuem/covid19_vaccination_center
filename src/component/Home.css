@@ -9,13 +9,13 @@
   border-radius: 50px;
 }
 
-.navigation {
+.home {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
 }
 
-.area {
+.navigation {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -24,26 +24,26 @@
   border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
-.area .city {
+.navigation .city {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
 
-.area .city div {
+.navigation .city div {
   color: #0039cb;
   cursor: pointer;
   font-size: 20px;
   padding: 5px 10px 5px 10px;
-  margin: 3px 5px 10px 5px;
+  margin: 3px 15px 10px 15px;
   background-color: white;
   border: 1px #0039cb solid;
   border-radius: 50px;
   font-weight: 600;
 }
 
-.area .city :hover {
+.navigation .city :hover {
   background-color: #0039cb;
   color: white;
 }
@@ -70,14 +70,23 @@
 
 @media (max-width: 650px) {
   /*페이지 크기가 600이하일 경우 반응*/
-
-  .area .city div {
+  .home {
+    width: 100%;
+  }
+  .navigation {
+    width: 100%;
+  }
+  .navigation .city div {
     padding: 5px 5px 5px 5px;
-    font-size: 15px;
+    margin: 3px 5px 10px 5px;
+    font-size: 14px;
     font-weight: 1000;
   }
+  .Location {
+    justify-content: center;
+  }
   .centers {
-    width: 75vh;
-    height: 35vh;
+    width: 100%;
+    height: 45vh;
   }
 }
