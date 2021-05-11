@@ -1,4 +1,4 @@
-# :hospital:covid19_vaccination_center [코로나19 예방접종센터 조회]:hospital:
+# :hospital:covid19_vaccination_center [코로나19 예방접종센터]:hospital:
 
 홈페이지 : [https://JongBuem.github.io/covid19_vaccination_center](https://JongBuem.github.io/covid19_vaccination_center)
 
